@@ -1,4 +1,5 @@
-﻿namespace BattleBitAPI.Server
+﻿
+namespace BattleBitAPI.Server
 {
     public class ServerSettings<TPlayer> where TPlayer : Player<TPlayer>
     {
@@ -28,10 +29,10 @@
         }
         public bool StamineEnabled
         {
-            get => mResources._RoomSettings.StamineEnabled;
+            get => mResources._RoomSettings.StaminaEnabled;
             set
             {
-                mResources._RoomSettings.StamineEnabled = value;
+                mResources._RoomSettings.StaminaEnabled = value;
                 mResources.IsDirtyRoomSettings = true;
             }
         }
